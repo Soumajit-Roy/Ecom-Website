@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Bootstrap CSS -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
 
@@ -30,266 +30,418 @@
     </title>
   </head>
   <body>
-
     <!-- navbar section header menu -->
-    <section class="header_menu" id="header_menu">
-      <div class="container-fluid px-0 shadow">
-      <nav class="navbar" style="background-color: #8de2f6">
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="images/icon.png"
-                alt="Logo"
-                width="30"
-                height="24"
-                class="d-inline-block align-text-top"
-              />
-              XYZ-Kart</a
-            >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary flex-sm-nowrap flex-wrap">
+      <div class="container-fluid">
+          <button class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar5">
               <span class="navbar-toggler-icon"></span>
-            </button>
+          </button>
+          <span class="navbar-brand flex-grow-1">Navbar 5</span>
+          <div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="navbar5">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Codeply</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="flex-grow-1">
+              <!--spacer-->
+          </div>
+      </div>
+  </nav>
 
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="products.html">Products</a>
-                <a class="nav-link" href="category.html">Category</a>
-                <a class="nav-link" href="about.html">About Us</a>
-                <a class="nav-link" href="contact.html">Contact Us</a>
+    <!--<section class="header_menu" id="header_menu">
+        <nav class="navbar" style="background-color: #4bb1fa;">
+          <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img
+                  src="images/icon.png"
+                  alt="Logo"
+                  width="30"
+                  height="24"
+                  class="d-inline-block align-text-top"
+                />
+                XYZ-Kart</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-                <a href="search.html" class="btn btn-primary" type="submit"
-                  >Search</a
-                >
-                <div class="cart">
-                  <a href="cart.html">
-                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
-                    <span class="badge badge-pill badge-primary">9</span>
-                  </a>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                  <a class="nav-link" href="products.html">Products</a>
+                  <a class="nav-link" href="category.html">Category</a>
+                  <a class="nav-link" href="about.html">About Us</a>
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+
+                  <a href="search.html" class="btn btn-primary" type="submit"
+                    >Search</a
+                  >
+                  <div class="cart">
+                    <a href="cart.html"> 
+                      <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                      <span class="position-absolute top-5 start-15 translate-middle badge rounded-pill bg-danger">
+                        9</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </nav>
+      </div>
+    </section>
+    <!--navbar section header menu ends here-->
+
+    <!-- =====Carousel Starts Here======= -->
+    <section class="header_carousel" id="header_carousel">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://picsum.photos/id/26/4209/2769"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/id/96/4752/3168"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/id/133/2742/1828"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--carousel ends here -->
+
+    <!--===========shop category starts==========-->
+    <section class="shop_category py-5 my-5" id="shop_category">
+      <div class="container-fluid">
+        <div class="section_title text-center mb-5">
+          <h1 class="display-6">Shop By Category</h1>
+        </div>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card card-custom">
+                <img
+                  src="https://picsum.photos/150"
+                  class="card-img-top"
+                  alt="Image 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Category X</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card card-custom">
+                <img
+                  src="https://picsum.photos/id/6/150"
+                  class="card-img-top"
+                  alt="Image 2"
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Category Y</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card card-custom">
+                <img
+                  src="https://picsum.photos/id/20/150"
+                  class="card-img-top"
+                  alt="Image 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Category Z</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card card-custom">
+                <img
+                  src="https://picsum.photos/id/30/150"
+                  class="card-img-top"
+                  alt="Image 4"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Category ZA</h5>
                 </div>
               </div>
             </div>
           </div>
-        </nav>
-      </nav>
+        </div>
       </div>
     </section>
-<!--navbar section header menu ends here-->
 
-<!-- =====Carousel Starts Here======= -->
- <section class="header_carousel" id="header_carousel">
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://picsum.photos/id/26/4209/2769" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/id/96/4752/3168" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/id/133/2742/1828" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
- </section>
-<!--carousel ends here -->
+    <!-- ++++++++++shop category ends+++++++++++++ -->
 
-<!--===========shop category starts==========-->
-<section class="shop_category py-5 my-5" id="shop_category">
-  <div class="container-fluid">
-    <div class="section_title text-center mb-5">
-    <h1 class="display-6">Shop By Category</h1>
-    </div>
-    <div class="container mt-5">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="card card-custom">
-        <img src="https://picsum.photos/150" class="card-img-top" alt="Image 1">
-        <div class="card-body">
-          <h5 class="card-title text-center">Category X</h5>
-          
+    <!-- **********************Latest Products Starts ************** -->
+    <section class="products py-5 my-5 bg-light" id="products">
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Latest Products</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card card-custom">
+              <div class="position-relative">
+                <img
+                  src="https://picsum.photos/400"
+                  class="card-img-top"
+                  alt="Product 1"
+                />
+                <div class="badge-new">New</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="product_details.html">Product 1</a>
+                </h5>
+                <p class="card-text">₹ 1000</p>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-custom">
+              <div class="position-relative">
+                <img
+                  src="https://picsum.photos/id/36/400"
+                  class="card-img-top"
+                  alt="Product 2"
+                />
+                <div class="badge-new">New</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="product_details.html">Product 2</a>
+                </h5>
+                <p class="card-text">₹ 1500</p>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-custom">
+              <div class="position-relative">
+                <img
+                  src="https://picsum.photos/id/39/400"
+                  class="card-img-top"
+                  alt="Product 3"
+                />
+                <div class="badge-new">New</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="product_details.html">Product 3</a>
+                </h5>
+                <p class="card-text">₹ 2000</p>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-custom">
+              <div class="position-relative">
+                <img
+                  src="https://picsum.photos/id/42/400"
+                  class="card-img-top"
+                  alt="Product 4"
+                />
+                <div class="badge-new">New</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="product_details.html">Product 4</a>
+                </h5>
+                <p class="card-text">₹ 2500</p>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-custom">
+              <div class="position-relative">
+                <img
+                  src="https://picsum.photos/id/48/400"
+                  class="card-img-top"
+                  alt="Product 5"
+                />
+                <div class="badge-new">New</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="product_details.html">Product 5</a>
+                </h5>
+                <p class="card-text">₹ 3000</p>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card card-custom">
+              <div class="position-relative">
+                <img
+                  src="https://picsum.photos/id/63/400"
+                  class="card-img-top"
+                  alt="Product 6"
+                />
+                <div class="badge-new">New</div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="product_details.html">Product 6</a>
+                </h5>
+                <p class="card-text">₹ 3500</p>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card card-custom">
-        <img src="https://picsum.photos/id/6/150" class="card-img-top" alt="Image 2">
-        <div class="card-body text-center">
-          <h5 class="card-title">Category Y</h5>
-          
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card card-custom">
-        <img src="https://picsum.photos/id/20/150" class="card-img-top" alt="Image 3">
-        <div class="card-body">
-          <h5 class="card-title text-center">Category Z</h5>
-         
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card card-custom">
-        <img src="https://picsum.photos/id/30/150" class="card-img-top" alt="Image 4">
-        <div class="card-body">
-          <h5 class="card-title text-center">Category ZA</h5>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
- </div></section>
+    </section>
+    <!--=========================Latest Products Ends====================-->
 
-<!-- ++++++++++shop category ends+++++++++++++ -->
+    <!--++++++++++++++++++++++Our Features Starts+++++++++++++++++-->
+    <section class="features py-5 my-5" id="features">
+        <div class="container mt-5">
+          <h2 class="text-center mb-4">Our Features</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card feature-card fast-delivery">
+                <i class="fas fa-shipping-fast feature-icon"></i>
+                <h5 class="card-title">Fast Delivery</h5>
+                <p class="card-text">
+                  Get your products delivered quickly and reliably.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card feature-card secure-payment">
+                <i class="fas fa-lock feature-icon"></i>
+                <h5 class="card-title">Secure Payment</h5>
+                <p class="card-text">
+                  Your payment information is safe and secure with us.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card feature-card authentic-products">
+                <i class="fas fa-certificate feature-icon"></i>
+                <h5 class="card-title">Authentic Products</h5>
+                <p class="card-text">
+                  We offer only genuine and authentic products.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- **********************Latest Products Starts ************** -->
-<section class="products py-5 my-5 bg-light" id="products">
-  <div class="container mt-5">
-    <h2 class="text-center mb-4">Latest Products</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card card-custom">
-          <div class="position-relative">
-            <img src="https://picsum.photos/400" class="card-img-top" alt="Product 1">
-            <div class="badge-new">New</div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Product 1</h5>
-            <p class="card-text">$10.00</p>
-            <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-custom">
-          <div class="position-relative">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 2">
-            <div class="badge-new">New</div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Product 2</h5>
-            <p class="card-text">$15.00</p>
-            <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-custom">
-          <div class="position-relative">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 3">
-            <div class="badge-new">New</div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Product 3</h5>
-            <p class="card-text">$20.00</p>
-            <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-custom">
-          <div class="position-relative">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 4">
-            <div class="badge-new">New</div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Product 4</h5>
-            <p class="card-text">$25.00</p>
-            <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-custom">
-          <div class="position-relative">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 5">
-            <div class="badge-new">New</div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Product 5</h5>
-            <p class="card-text">$30.00</p>
-            <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card card-custom">
-          <div class="position-relative">
-            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 6">
-            <div class="badge-new">New</div>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Product 6</h5>
-            <p class="card-text">$35.00</p>
-            <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--=========================Latest Products Ends====================-->
+    </section>
 
+    <!--=============================Our Features Ends===============================-->
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

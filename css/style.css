@@ -1,6 +1,7 @@
 .card-custom {
     width: 100%;
     margin-bottom: 20px;
+    box-shadow: 2px 2px 20px 2px ;
   }
   .card-img-top {
     height: 400px;
@@ -14,10 +15,32 @@
     color: white;
     padding: 5px;
     font-size: 12px;
+    border-radius: 10px;
   }
   .card-body {
     text-align: center;
   }
   .star-rating {
     color: #ffcc00;
+  }
+  .feature-card {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .feature-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .fast-delivery {
+    background-color: #007bff !important;
+  }
+  .secure-payment {
+    background-color: #28a745 !important;
+  }
+  .authentic-products {
+    background-color: #ffc107 !important;
   }
