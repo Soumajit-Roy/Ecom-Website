@@ -1,0 +1,23 @@
+.card-custom {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card-img-top {
+    height: 400px;
+    object-fit: cover;
+  }
+  .badge-new {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+  }
+  .card-body {
+    text-align: center;
+  }
+  .star-rating {
+    color: #ffcc00;
+  }
