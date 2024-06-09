@@ -44,3 +44,44 @@
   .authentic-products {
     background-color: #ffc107 !important;
   }
+  .footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+  }
+  .footer a {
+    color: #d1d1d1;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .footer .footer-column {
+    margin-bottom: 20px;
+  }
+  .footer .footer-column h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  .footer .footer-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+  }

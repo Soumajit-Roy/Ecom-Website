@@ -31,83 +31,68 @@
   </head>
   <body>
     <!-- navbar section header menu -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary flex-sm-nowrap flex-wrap">
-      <div class="container-fluid">
-          <button class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar5">
-              <span class="navbar-toggler-icon"></span>
+    <section class="header_menu" id="header_menu">
+      <nav
+        class="navbar navbar-expand-sm flex-sm-nowrap flex-wrap"
+        style="background-color: #e3f2fd"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar5"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <span class="navbar-brand flex-grow-1">Navbar 5</span>
-          <div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="navbar5">
-              <ul class="navbar-nav mx-auto">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Codeply</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                  </li>
-              </ul>
+          <img
+            src="images/icon.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          <span class="navbar-brand flex-grow-1">XYZ-Kart</span>
+          <div
+            class="navbar-collapse collapse flex-grow-1 justify-content-center"
+            id="navbar5"
+          >
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.html">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <a href="search.html" class="btn btn-primary" type="submit"
+              >Search</a
+            >
+            <div class="cart">
+              <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                <span
+                  class="position-absolute top-5 start-15 translate-middle badge rounded-pill bg-danger"
+                >
+                  9</span
+                >
+              </a>
+            </div>
           </div>
           <div class="flex-grow-1">
-              <!--spacer-->
+            <!--spacer-->
           </div>
-      </div>
-  </nav>
-
-    <!--<section class="header_menu" id="header_menu">
-        <nav class="navbar" style="background-color: #4bb1fa;">
-          <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                <img
-                  src="images/icon.png"
-                  alt="Logo"
-                  width="30"
-                  height="24"
-                  class="d-inline-block align-text-top"
-                />
-                XYZ-Kart</a
-              >
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                  <a class="nav-link" href="products.html">Products</a>
-                  <a class="nav-link" href="category.html">Category</a>
-                  <a class="nav-link" href="about.html">About Us</a>
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-
-                  <a href="search.html" class="btn btn-primary" type="submit"
-                    >Search</a
-                  >
-                  <div class="cart">
-                    <a href="cart.html"> 
-                      <i class="fa-solid fa-cart-shopping fa-2x"></i>
-                      <span class="position-absolute top-5 start-15 translate-middle badge rounded-pill bg-danger">
-                        9</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </section>
     <!--navbar section header menu ends here-->
 
@@ -406,42 +391,110 @@
 
     <!--++++++++++++++++++++++Our Features Starts+++++++++++++++++-->
     <section class="features py-5 my-5" id="features">
-        <div class="container mt-5">
-          <h2 class="text-center mb-4">Our Features</h2>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card feature-card fast-delivery">
-                <i class="fas fa-shipping-fast feature-icon"></i>
-                <h5 class="card-title">Fast Delivery</h5>
-                <p class="card-text">
-                  Get your products delivered quickly and reliably.
-                </p>
-              </div>
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Our Features</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card feature-card fast-delivery">
+              <i class="fas fa-shipping-fast feature-icon"></i>
+              <h5 class="card-title">Fast Delivery</h5>
+              <p class="card-text">
+                Get your products delivered quickly and reliably.
+              </p>
             </div>
-            <div class="col-md-4">
-              <div class="card feature-card secure-payment">
-                <i class="fas fa-lock feature-icon"></i>
-                <h5 class="card-title">Secure Payment</h5>
-                <p class="card-text">
-                  Your payment information is safe and secure with us.
-                </p>
-              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card feature-card secure-payment">
+              <i class="fas fa-lock feature-icon"></i>
+              <h5 class="card-title">Secure Payment</h5>
+              <p class="card-text">
+                Your payment information is safe and secure with us.
+              </p>
             </div>
-            <div class="col-md-4">
-              <div class="card feature-card authentic-products">
-                <i class="fas fa-certificate feature-icon"></i>
-                <h5 class="card-title">Authentic Products</h5>
-                <p class="card-text">
-                  We offer only genuine and authentic products.
-                </p>
-              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card feature-card authentic-products">
+              <i class="fas fa-certificate feature-icon"></i>
+              <h5 class="card-title">Authentic Products</h5>
+              <p class="card-text">
+                We offer only genuine and authentic products.
+              </p>
             </div>
           </div>
         </div>
-
+      </div>
     </section>
 
     <!--=============================Our Features Ends===============================-->
+
+    <!--+++++++++++++++++++++++Footer Starts++++++++++++++++++++++++++++++-->
+    <section class="footer_section pt-5 pb-2" id="footer_section">
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 footer-column">
+              <i class="fas fa-shopping-cart footer-icon"></i>
+              <p>Our e-commerce site offers the best products at the most affordable prices. Shop with us and experience unmatched quality and service.</p>
+            </div>
+            <div class="col-md-3 footer-column">
+              <h5>Quicklinks</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 footer-column">
+              <h5>New Products</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Product 1</a></li>
+                <li><a href="#">Product 2</a></li>
+                <li><a href="#">Product 3</a></li>
+                <li><a href="#">Product 4</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 footer-column">
+              <h5>Support</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Customer Service</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>    
+    </section>
+    <!--+++++++++++++++++++++++Footer ENds+++++++++++++++++++++++++++++++++-->
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("scrollToTopBtn");
+  
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+  
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+  
+      // When the user clicks on the button, scroll to the top of the document
+      mybutton.onclick = function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      };
+    </script>
+
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
