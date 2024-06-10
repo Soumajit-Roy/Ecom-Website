@@ -171,3 +171,40 @@
   color: #007bff;
 }
 /*============category page===========*/
+
+/*+++++++++++++++++++++Cart Page+++++++++++++++++++++*/
+body {
+  background-color: #f5f5f5;
+}
+
+.cart-item {
+  background: rgb(5,254,213);
+  background: linear-gradient(90deg, rgba(5,254,213,1) 0%, rgba(9,113,121,0.5271358543417367) 51%, rgba(0,212,255,1) 100%);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: #ffb9b9 !important;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  top: 45px;
+}
+
+.quantity-control button {
+  border: none;
+  background: #e4fb4d;
+}
+
+.quantity-control input {
+  border: 1px solid #edfd89;
+}
+
+.price h5 {
+  color: #333;
+}
+.ml-3{
+  margin-left: 20px;
+}
+
+/*+++++++++++++++++++++Cart page++++++++++++++++++++++*/

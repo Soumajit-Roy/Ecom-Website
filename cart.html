@@ -96,11 +96,93 @@
         </div>
       </nav>
     </section>
-    <!--navbar section header menu ends here-->
+    <!------------navbar section header menu ends here-------------->
 
+    <div class="container my-5">
+      <h1 class="text-center">Cart</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <div
+            class="cart-item d-flex justify-content-between align-items-center p-3 my-3"
+          >
+            <div class="d-flex align-items-center">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
+                alt="Blue denim shirt"
+                class="img-fluid"
+                style="width: 100px"
+              />
+              <div class="ml-3">
+                <h5>Blue Denim Shirt</h5>
+                <p>Color: Blue | Size: M</p>
+              </div>
+            </div>
+            <div class="quantity-control">
+              <button class="btn btn-light">-</button>
+              <input
+                type="text"
+                value="1"
+                class="form-control d-inline w-25 text-center"
+              />
+              <button class="btn btn-light">+</button>
+            </div>
+            <div class="price">
+              <h5>₹227.99</h5>
+            </div>
+            <button class="btn btn-danger">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+          <div
+            class="cart-item d-flex justify-content-between align-items-center p-3 my-3"
+          >
+            <div class="d-flex align-items-center">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/13a.webp"
+                alt="Red hoodie"
+                class="img-fluid"
+                style="width: 100px"
+              />
+              <div class="ml-3">
+                <h5>Red Hoodie</h5>
+                <p>Color: Red | Size: M</p>
+              </div>
+            </div>
+            <div class="quantity-control">
+              <button class="btn btn-light">-</button>
+              <input
+                type="text"
+                value="1"
+                class="form-control d-inline w-25 text-center"
+              />
+              <button class="btn btn-light">+</button>
+            </div>
+            <div class="price">
+              <h5>₹355.99</h5>
+            </div>
+            <button class="btn btn-danger">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <h4>Order Summary</h4>
+            <p>Product name 1 x2 <span class="float-right">₹255.98</span></p>
+            <p>Product name 2 x2 <span class="float-right">₹355.98</span></p>
+            <hr />
+            <h5>
+              Total amount (including VAT):
+              <span class="float-right">₹533.98</span>
+            </h5>
+            <a href="checkout.html" class="btn btn-primary btn-block mt-3">
+              Go to Checkout
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-    
     <!--+++++++++++++++++++++++Footer Starts++++++++++++++++++++++++++++++-->
     <section class="footer_section pt-5 pb-2" id="footer_section">
       <footer class="footer">
@@ -154,7 +236,9 @@
     <!--+++++++++++++++++++++++Footer ENds+++++++++++++++++++++++++++++++++-->
 
     <!-- Scroll to Top Button -->
-    <a href="#top" class="scroll-to-top"><i class="fa-regular fa-circle-up"></i></a>
+    <a href="#top" class="scroll-to-top"
+      ><i class="fa-regular fa-circle-up"></i
+    ></a>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS-->
     <script
@@ -172,5 +256,6 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script src="js/cart_page.js"></script>
   </body>
 </html>
