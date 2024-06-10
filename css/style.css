@@ -138,7 +138,6 @@
   }
 }
  /*---------------Product Page------------*/
-
  .star-rating {
   color: #f8ce0b;
 }
@@ -146,6 +145,20 @@
   display: flex;
   justify-content: space-between;
 }
-
-
  /*---------------Product Page------------*/
+
+ /*---------------Product Details Page------------*/
+         .product-detail {
+            margin-top: 20px;
+        }
+        .product-detail img {
+            width: 100%;
+        }
+        .related-products img {
+            width: 100%;
+        }
+        .product-detail .details {
+            padding-left: 20px;
+        }
+
+ /*---------------Product Details Page------------*/
