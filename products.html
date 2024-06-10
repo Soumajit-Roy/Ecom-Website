@@ -98,7 +98,217 @@
     </section>
     <!--navbar section header menu ends here-->
 
+    <div class="container mt-4">
+      <div class="row">
+          <!-- Filter Section -->
+          <div class="col-lg-3">
+              <h4>Filters</h4>
+              <div class="mb-3">
+                  <h5>Category</h5>
+                  <select class="form-control" id="categoryFilter">
+                      <option value="">All Categories</option>
+                      <option value="electronics">Electronics</option>
+                      <option value="fashion">Fashion</option>
+                      <option value="home">Home</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                  <h5>Price Range</h5>
+                  <input type="range" class="form-control" id="priceRange" min="0" max="4000" step="100">
+                  <div class="price-range-labels">
+                      <span id="priceMin">0</span> - <span id="priceMax">4000</span>
+                  </div>
+              </div>
+              <div class="mb-3">
+                  <h5>Color</h5>
+                  <select class="form-control" id="colorFilter">
+                      <option value="">All Colors</option>
+                      <option value="red">Red</option>
+                      <option value="blue">Blue</option>
+                      <option value="green">Green</option>
+                  </select>
+              </div>
+              <div class="mb-3">
+                  <h5>Size</h5>
+                  <select class="form-control" id="sizeFilter">
+                      <option value="">All Sizes</option>
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                  </select>
+              </div>
+          </div>
 
+          <!-- Product Section -->
+          <div class="col-lg-9">
+              <div class="d-flex justify-content-between mb-3">
+                  <h4>Products</h4>
+                  <select class="form-control w-25" id="sortOptions">
+                      <option value="az">Sort: A to Z</option>
+                      <option value="mostRated">Sort: Most Rated</option>
+                      <option value="priceLowHigh">Sort: Price Low to High</option>
+                      <option value="priceHighLow">Sort: Price High to Low</option>
+                  </select>
+              </div>
+              <div class="row" id="productList">
+                  <!-- Product Cards -->
+                  <!-- product card start -->
+                  <div class="col-md-4" data-category="home" data-price="1000" data-color="green" data-size="large">
+                    <div class="card card-custom">
+                      <div class="position-relative">
+                        <img
+                          src="https://picsum.photos/400"
+                          class="card-img-top"
+                          alt="Product 1"
+                        />
+                        <div class="badge-new">New</div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a href="product_details.html">Product 1</a>
+                        </h5>
+                        <p class="card-text">₹ 1000</p>
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4" data-category="fashion" data-price="1500" data-color="blue" data-size="medium">
+                    <div class="card card-custom">
+                      <div class="position-relative">
+                        <img
+                          src="https://picsum.photos/id/36/400"
+                          class="card-img-top"
+                          alt="Product 2"
+                        />
+                        <div class="badge-new">New</div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a href="product_details.html">Product 2</a>
+                        </h5>
+                        <p class="card-text">₹ 1500</p>
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4" data-category="fashion" data-price="2000" data-color="blue" data-size="medium">
+                    <div class="card card-custom">
+                      <div class="position-relative">
+                        <img
+                          src="https://picsum.photos/id/39/400"
+                          class="card-img-top"
+                          alt="Product 3"
+                        />
+                        <div class="badge-new">New</div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a href="product_details.html">Product 3</a>
+                        </h5>
+                        <p class="card-text">₹ 2000</p>
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4" data-category="home" data-price="2500" data-color="green" data-size="large">
+                    <div class="card card-custom">
+                      <div class="position-relative">
+                        <img
+                          src="https://picsum.photos/id/42/400"
+                          class="card-img-top"
+                          alt="Product 4"
+                        />
+                        <div class="badge-new">New</div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a href="product_details.html">Product 4</a>
+                        </h5>
+                        <p class="card-text">₹ 2500</p>
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4" data-category="electronics" data-price="3000" data-color="red" data-size="small">
+                    <div class="card card-custom">
+                      <div class="position-relative">
+                        <img
+                          src="https://picsum.photos/id/48/400"
+                          class="card-img-top"
+                          alt="Product 5"
+                        />
+                        <div class="badge-new">New</div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a href="product_details.html">Product 5</a>
+                        </h5>
+                        <p class="card-text">₹ 3000</p>
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4"data-category="electronics" data-price="3500" data-color="red" data-size="small">
+                    <div class="card card-custom">
+                      <div class="position-relative">
+                        <img
+                          src="https://picsum.photos/id/63/400"
+                          class="card-img-top"
+                          alt="Product 6"
+                        />
+                        <div class="badge-new">New</div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a href="product_details.html">Product 6</a>
+                        </h5>
+                        <p class="card-text">₹ 3500</p>
+                        <div class="star-rating">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Add more product cards similarly -->
+              </div>
+          </div>
+      </div>
+  </div>
 
     
     <!--+++++++++++++++++++++++Footer Starts++++++++++++++++++++++++++++++-->
@@ -172,5 +382,7 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/products_p.js"></script>
   </body>
 </html>

@@ -137,3 +137,15 @@
       height: auto;
   }
 }
+ /*---------------Product Page------------*/
+
+ .star-rating {
+  color: #f8ce0b;
+}
+.price-range-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+ /*---------------Product Page------------*/
