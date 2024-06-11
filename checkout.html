@@ -28,6 +28,22 @@
     <title>
       XYZ-Kart: Shop Online for Mobiles, Books, Watches, Shoes and More
     </title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #fff;
+          padding: 20px;
+      }
+      .container {
+          background-color: #da5959;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+          margin-top: 0;
+      }
+      
+  </style>
   </head>
   <body>
     <!-- Named anchor at the top of the page -->
@@ -98,7 +114,61 @@
     </section>
     <!--navbar section header menu ends here-->
 
-
+    <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <h2>Billing Details</h2>
+              <form id="checkout-form" action="order_confirmation.html">
+                  <div class="form-group">
+                      <label for="name">Full Name</label>
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="address">Address</label>
+                      <input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="city">City</label>
+                          <input type="text" class="form-control" id="city" name="city" placeholder="City" required>
+                      </div>
+                      <div class="form-group col-md-4">
+                          <label for="state">State</label>
+                          <input type="text" class="form-control" id="state" name="state" placeholder="State" required>
+                      </div>
+                      <div class="form-group col-md-2">
+                          <label for="zip">ZIP Code</label>
+                          <input type="text" class="form-control" id="zip" name="zip" placeholder="ZIP Code" required>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="notes">Order Notes</label>
+                      <textarea class="form-control" id="notes" name="notes" placeholder="Order Notes"></textarea>
+                  </div>
+                  <div class="purchase_btn">
+                  <button type="submit" class="btn btn-primary text-center">Purchase</button>
+                </div>
+              </form>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-3">
+              <h4>Order Summary</h4>
+              <p>Product name 1 x2 <span class="float-right">₹255.98</span></p>
+              <p>Product name 2 x2 <span class="float-right">₹355.98</span></p>
+              <hr />
+              <h5>
+                Total amount (including VAT):
+                <span class="float-right">₹533.98</span>
+              </h5>
+              
+            </div>
+          </div>
+      </div>
+  </div>
 
     
     <!--+++++++++++++++++++++++Footer Starts++++++++++++++++++++++++++++++-->
@@ -172,5 +242,12 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.getElementById('checkout-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          window.location.href = 'order_confirmation.html';
+      });
+  </script>
+
   </body>
 </html>
